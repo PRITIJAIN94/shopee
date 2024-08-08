@@ -1,0 +1,81 @@
+{% load static  %}
+
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 180px;
+  float:left;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  font-size: 10px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Product </h2>
+
+<div class="card">
+  <img src="{% static 'img/product-1.jpg' %}" alt="Denim Jeans" style="width:70%">
+  <h1>White gowns </h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="{% static 'img/product-2.jpg' %}" alt="Denim Jeans" style="width:70%">
+  <h1>Denim shirt</h1>
+  <p class="price">20.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <button> <a href="cart/" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+  </button>
+</div>
+
+<div class="card">
+  <img src="{% static 'img/product-3.jpg' %}" alt="Denim Jeans" style="width:70%">
+  <h1>Scaf shirt</h1>
+  <p class="price">22.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="{% static 'img/product-4.jpg' %}" alt="Denim Jeans" style="width:70%">
+  <h1>Swim Tshirt</h1>
+  <p class="price">28.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="{% static 'img/product-5.jpg' %}" alt="Denim Jeans" style="width:70%">
+  <h1>T shirt</h1>
+  <p class="price">30.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+
+</body>
+</html>
